@@ -1,0 +1,108 @@
+// Typo family
+$typoPrimary : "Montserrat Subrayada", sans-serif;
+$typoSecondaire : "Roboto", sans-serif;
+
+// Size typo
+$typoXXL : 230%;
+$typoXL: 1.5rem;
+$typoM : 1.2rem;
+$typoS :  1rem;
+
+
+
+
+// Colors
+$colorPrimary :#38b858;
+$colorSecondary :#112c64;
+$colorBack : #c4c4c436;
+
+
+body {
+    font-size: 100%;
+  }
+ 
+  h1 {
+    font-family: $typoPrimary;
+    font-size: $typoXXL;
+    color: $colorSecondary;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.8rem;
+  }
+
+  p,
+  h3 {
+    color: $colorSecondary;
+    font-family: $typoSecondaire;
+    font-size: $typoM;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  h3 {
+    font-size:$typoXL;
+  }
+
+  .padBot-025rem {
+    padding-bottom: 0.25rem;
+  }
+
+  .no-margin-vertical {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .bouton {
+    font-weight: 400;
+    font-size: 1.3em;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: $colorPrimary;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.2s ease-in;
+    font-family:$typoSecondaire;
+    text-align: center;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #encartJeux {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 100px auto;
+    border-radius: 10px;
+    background: $colorBack;
+    padding: 3rem;
+    max-width: 340px;
+    // texte ul and li inside encart jeux
+    ul {
+        color: $colorSecondary;
+        font-family:$typoSecondaire;
+        font-size: $typoM;
+        line-height: 1.3em;
+      }
+    
+       li {
+        font-size:$typoS;
+        padding: 0.55rem 0;
+        margin-bottom: 0.45rem;
+        border-bottom: 1px solid $colorSecondary;
+      }
+    
+      li:last-child {
+        border: 0;
+      }
+  }
+
+
